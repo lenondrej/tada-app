@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import './Todo.css';
 import TodoInput from './TodoInput';
 import TodoList from './TodoList';
 
@@ -30,9 +29,17 @@ function Todo() {
 
   return (
     <>
-      <h1>From TODO to TADA!</h1>
-      <TodoInput todos={todos} setTodos={setTodos} inputText={inputText} setInputText={setInputText}/>
-      <TodoList setTodos={setTodos} todos={todos}/>
+      <h1 className="font-poppins text-5xl font-bold text-primary mt-40 text-center">Make tadaaa 🎉 from TODO!</h1>
+      <p className="text-yellow-50 text-3xl font-medium text-center mt-5">... and make it great again!</p>
+
+      <TodoInput  todos={todos}
+                  setTodos={setTodos}
+                  inputText={inputText}
+                  setInputText={setInputText}
+      />
+
+      <TodoList setTodos={setTodos}
+                todos={todos}/>
     </>
   );
 }
