@@ -29,7 +29,7 @@ function Todo() {
 
   return (
     <>
-      <h1 className="font-poppins text-5xl font-bold text-primary mt-40 text-center">Make tadaaa 🎉 from TODO!</h1>
+      <h1 className="font-poppins text-5xl font-bold text-primary mt-32 text-center">Make tadaaa 🎉 from TODO!</h1>
       <p className="text-yellow-50 text-3xl font-medium text-center mt-5">... and make it great again!</p>
 
       <TodoInput  todos={todos}

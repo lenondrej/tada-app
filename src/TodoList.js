@@ -1,11 +1,10 @@
 import React from 'react';
 import TodoItem from './TodoItem';
 
-const TodoList = ({todos, setTodos, text}) => {
+const TodoList = ({todos, setTodos}) => {
   return (
-    <div className="mt-20 text-center">
-      <h3 className="text-xl font-semibold">{text ? <p> This is a list of todos: </p> : <p> Your todo list is empty 😔 </p>}</h3>
-      <ul className="mt-3 p-2.5">
+    <div className="mt-12 text-center font-poppins h-screen flex flex-col place-items-center">
+      <div className="mt-3 p-2.5">
         {
         todos.map((todo) => (
           <TodoItem text={todo.text}
@@ -17,7 +16,7 @@ const TodoList = ({todos, setTodos, text}) => {
           />
         ))
         }
-      </ul>
+      </div>
     </div>
   )
 }

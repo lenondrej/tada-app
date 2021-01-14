@@ -20,10 +20,10 @@ const TodoInput = ({inputText, setInputText, todos, setTodos}) => {
   };
 
   return (
-    <div className="mt-20 text-center">
+    <div className="mt-20 text-center flex flex-col justify-center">
 
-      <form className="">
-        <input className="bg-gray-200 focus:bg-white border-blue-500 rounded-md p-1.5 w-2/6" onChange={inputHandler} value={inputText} type="text"></input>
+      <form>
+        <input className="bg-gray-200 focus:bg-white border-blue-500 rounded-md p-1.5 w-6/12" onChange={inputHandler} value={inputText} type="text"></input>
         <button className="bg-secondary text-white p-1 ml-4 rounded-md" onClick={addTodoHandler} type="submit">add todo</button>
       </form>
 
