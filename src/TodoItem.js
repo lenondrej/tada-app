@@ -1,4 +1,5 @@
 import React from 'react';
+import './TodoItem.css'
 
 const TodoItem = ({text, todo, tada, todos, setTodos}) => {
 
@@ -20,10 +21,12 @@ const TodoItem = ({text, todo, tada, todos, setTodos}) => {
   };
 
   return(
-    <div>
-      <p style={{fontSize: '1.3rem'}}>{text}</p>
-      <button onClick={tadaHandler}>done with this shit?</button>
-      {tada ? ` you are done with this, take a nap 🥳` : `you need to work harder 👷🏻‍♂️`}
+    <div className="todo-item">
+      <h5>👉🏻 {text}</h5>
+      <div className="todo-info">
+        {tada ? <p>🎉 you did it! 🎉</p> : <p>👷🏻‍♂️ this needs to be done 👷🏻‍♂️</p>}
+        <button onClick={tadaHandler}>done?</button>
+      </div>
     </div>
   );
 }

@@ -1,15 +1,44 @@
 p {
   font-family: 'Francois One', sans-serif;
+  margin-bottom: 2rem;
 }
 
-ul {
-  background-color: aquamarine;
+.todo-list {
+  width: 80vw;
+  margin: 4rem auto;
+  display: flex;
+  flex-direction: column;
 }
 
 h4 {
   margin-top: 6rem;
+  margin-right: auto;
+  margin-left: auto;
   font-size: 1.3rem;
   text-align: center;
   color: #3B3A35;
-  font-family: 'Coda Caption', sans-serif
+  font-family: 'Coda Caption', sans-serif;
+  width: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .todo-list {
+      width: 80vw;
+      margin: 2rem auto;
+      display: flex;
+      flex-direction: column;
+    }
+
+    h4 {
+      margin-top: 3rem;
+      margin-right: auto;
+      margin-left: auto;
+      font-size: 0.8rem;
+      text-align: center;
+      color: #3B3A35;
+      font-family: 'Coda Caption', sans-serif;
+      width: 50%;
+  }
+
 }
