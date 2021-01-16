@@ -28,19 +28,13 @@ function Todo() {
     }
   }
 
-  const clearStorage = () => {
-    setTodos([])
-  }
-
 
   return (
     <>
-      <button className="btn-danger" onClick={clearStorage}>Reset all todos! 🙀</button>
       <h1>Make tadaaa 🎉 from TODO!</h1>
-      <h3>And make your life great again!*</h3>
+      <h3>And make your life great again!</h3>
       <TodoInput todos={todos} setTodos={setTodos} inputText={inputText} setInputText={setInputText}/>
       <TodoList setTodos={setTodos} todos={todos}/>
-      <p>* even though this is just an imitation of life</p>
     </>
   );
 }

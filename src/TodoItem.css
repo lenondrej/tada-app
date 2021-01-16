@@ -6,36 +6,42 @@ h5 {
 }
 
 .todo-item {
-  margin: 1rem auto;
+  margin: 0.8rem auto;
   background-color: #20457C;
   padding: 3rem;
   border-radius: 10px;
   width: 80%;
-}
-
-.todo-info {
   display: flex;
   flex-direction: row;
-  width: 60%;
-  align-items: stretch;
-  margin-right: auto;
-  margin-left: auto;
 }
 
-.todo-info p {
-  flex: 4;
+.todo-content {
+  flex-grow: 8;
+}
+
+.todo-content p {
   color: #ECDFBD;
   text-decoration: none;
-  padding: 0.1rem 0.2rem;
-  margin: 0;
+  text-align: left;
+  padding-top: 0.1rem;
 }
 
-.todo-info button {
-  flex: 1;
+.todo-buttons button {
+  display: flex;
   background-color: #ECDFBD;
   padding: 0.1rem 0.2rem;
   color: #20457C;
   border-radius: 10px;
+  place-content: center;
+  padding: 0.3rem;
+  align-self: center;
+  width: 150px;
+  margin-top: 0.5rem;
+}
+
+.todo-buttons {
+  display: flex;
+  flex-direction: column;
 }
 
 

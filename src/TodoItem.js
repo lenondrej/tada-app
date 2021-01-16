@@ -20,13 +20,39 @@ const TodoItem = ({text, todo, tada, todos, setTodos}) => {
 
   };
 
+  const deleteHandler = (event) => {
+
+    setTodos(
+      todos.map((item) => {
+        if (item.id === todo.id) {
+          return {
+            ...item,
+            isPublic: !item.isPublic
+          };
+        }
+        return item;
+      })
+    );
+
+  };
+
+  const clearStorage = () => {
+    setTodos([])
+  };
+
   return(
     <div className="todo-item">
-      <h5>👉🏻 {text}</h5>
-      <div className="todo-info">
+      <div className="todo-content">
+        <h5>👉🏻 {text}</h5>
         {tada ? <p>🎉 you did it! 🎉</p> : <p>👷🏻‍♂️ this needs to be done 👷🏻‍♂️</p>}
-        <button onClick={tadaHandler}>done?</button>
       </div>
+
+    <div className="todo-buttons">
+      <button onClick={tadaHandler}>tada</button>
+      <button onClick={deleteHandler}><i className="fas fa-trash-alt"></i></button>
+      <button onClick={clearStorage}>delete all</button>
+    </div>
+
     </div>
   );
 }

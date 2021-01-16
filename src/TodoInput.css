@@ -37,6 +37,16 @@
   border: none;
 }
 
+.btn-danger i {
+  background-color: #ff3b3f;
+  flex: 0;
+  margin-left: 0.5rem;
+  color: #ECDFBD;
+  padding: 0.6rem;
+  border-radius: 8px;
+  font-size: 1.6em;
+}
+
 
 @media only screen and (max-width: 600px) {
 
@@ -45,7 +55,7 @@
     margin: 10% 15%;
     display: flex;
     position: relative;
-    margin-top: 5%;
+    margin-top: 10%;
   }
 
   .todo-input {

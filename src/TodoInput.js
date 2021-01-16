@@ -14,7 +14,8 @@ const TodoInput = ({inputText, setInputText, todos, setTodos}) => {
       {
         text: inputText,
         completed: false,
-        id: Math.random()*1000
+        id: Math.random()*1000,
+        isPublic: true
       }
     ]);
     setInputText("");
@@ -24,6 +25,7 @@ const TodoInput = ({inputText, setInputText, todos, setTodos}) => {
     event.preventDefault();
     setInputText("");
   }
+
 
   return (
     <div>
