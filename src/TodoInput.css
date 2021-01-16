@@ -1,0 +1,36 @@
+.todo-form {
+  text-align: center;
+  margin: 0 15%;
+  display: flex;
+  position: relative;
+  margin-top: 5%;
+}
+
+.todo-input {
+  flex: 8;
+  padding: 0.6rem;
+  font-family: 'Francois One', sans-serif;
+  border-radius: 8px;
+  font-size: 1.6rem;
+}
+
+.btn-todo-input {
+  flex: 2;
+  margin-left: 0.5rem;
+  background-color: #20457C;
+  color: #ECDFBD;
+  padding: 0.6rem;
+  font-family: 'Francois One', sans-serif;
+  border-radius: 8px;
+  font-size: 1.6em;
+}
+
+.btn-close {
+  flex: 0;
+  margin-left: 0.5rem;
+  background-color: #ECDFBD;
+  color: #20457C;;
+  padding: 0.6rem;
+  font-size: 1.6em;
+  border: none;
+}

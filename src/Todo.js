@@ -26,11 +26,18 @@ function Todo() {
       let localTodo = JSON.parse(localStorage.getItem('todos'));
       setTodos(localTodo);
     }
-  };
+  }
+
+  const clearStorage = () => {
+    setTodos([])
+  }
+
 
   return (
     <>
-      <h1>From TODO to TADA!</h1>
+      <button className="btn-danger" onClick={clearStorage}>Reset all todos! 🙀</button>
+      <h1>Make tadaaa 🎉 from TODO!</h1>
+      <h3>This app is as meaningless as life itself</h3>
       <TodoInput todos={todos} setTodos={setTodos} inputText={inputText} setInputText={setInputText}/>
       <TodoList setTodos={setTodos} todos={todos}/>
     </>

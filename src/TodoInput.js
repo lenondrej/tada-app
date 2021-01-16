@@ -20,12 +20,18 @@ const TodoInput = ({inputText, setInputText, todos, setTodos}) => {
     setInputText("");
   };
 
+  const clearInput = (event) => {
+    event.preventDefault();
+    setInputText("");
+  }
+
   return (
     <div>
 
-      <form>
-        <input onChange={inputHandler} value={inputText} type="text"></input>
-        <button onClick={addTodoHandler} type="submit">add todo</button>
+      <form className="todo-form">
+        <input className="todo-input"onChange={inputHandler} value={inputText} type="text" name="insert your todo"></input>
+        <button className="btn-close" onClick={clearInput}><i className="fas fa-times"></i></button>
+        <button className="btn-todo-input"onClick={addTodoHandler} type="submit">add todo</button>
       </form>
 
     </div>
