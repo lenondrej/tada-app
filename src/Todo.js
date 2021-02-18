@@ -26,11 +26,13 @@ function Todo() {
       let localTodo = JSON.parse(localStorage.getItem('todos'));
       setTodos(localTodo);
     }
-  };
+  }
+
 
   return (
     <>
-      <h1>From TODO to TADA!</h1>
+      <h1>Make tadaaa 🎉 from TODO!</h1>
+      <h3>And make your life great again!</h3>
       <TodoInput todos={todos} setTodos={setTodos} inputText={inputText} setInputText={setInputText}/>
       <TodoList setTodos={setTodos} todos={todos}/>
     </>

@@ -1,0 +1,91 @@
+h5 {
+  font-size: 2rem;
+  font-family: 'Francois One', sans-serif;
+  color: #FB6648;
+  margin-bottom: 1.5rem;
+}
+
+.todo-item {
+  margin: 0.8rem auto;
+  background-color: #20457C;
+  padding: 3rem;
+  border-radius: 10px;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+}
+
+.todo-content {
+  flex-grow: 8;
+}
+
+.todo-content p {
+  color: #ECDFBD;
+  text-decoration: none;
+  text-align: left;
+  padding-top: 0.1rem;
+}
+
+.todo-buttons button {
+  display: flex;
+  background-color: #ECDFBD;
+  padding: 0.1rem 0.2rem;
+  color: #20457C;
+  border-radius: 10px;
+  place-content: center;
+  padding: 0.3rem;
+  align-self: center;
+  width: 150px;
+  margin-top: 0.5rem;
+}
+
+.todo-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+  h5 {
+    font-size: 1rem;
+    font-family: 'Francois One', sans-serif;
+    color: #FB6648;
+    margin-bottom: 1rem;
+  }
+
+  .todo-item {
+    margin: 1rem auto;
+    background-color: #20457C;
+    padding: 1.5rem;
+    border-radius: 10px;
+    width: 90%;
+  }
+
+  .todo-info {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: baseline;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .todo-info p {
+    flex: 4;
+    color: #ECDFBD;
+    text-decoration: none;
+    padding: 0.1rem 0.2rem;
+  }
+
+  .todo-info button {
+    flex: 1;
+    background-color: #ECDFBD;
+    padding: 0.1rem 0.2rem;
+    color: #20457C;
+    border-radius: 10px;
+  }
+
+}
