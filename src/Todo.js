@@ -31,8 +31,8 @@ function Todo() {
 
   return (
     <>
-      <h1>Make tadaaa 🎉 from TODO!</h1>
-      <h3>And make your life great again!</h3>
+      <h1 className="header">Make tadaaa 🎉 from TODO!</h1>
+      <h3 className="header">And make your life great again!</h3>
       <TodoInput todos={todos} setTodos={setTodos} inputText={inputText} setInputText={setInputText}/>
       <TodoList setTodos={setTodos} todos={todos}/>
     </>

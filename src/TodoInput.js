@@ -1,4 +1,5 @@
 import React from 'react';
+import $ from 'jquery';
 import './TodoInput.css';
 
 const TodoInput = ({inputText, setInputText, todos, setTodos}) => {
@@ -21,19 +22,18 @@ const TodoInput = ({inputText, setInputText, todos, setTodos}) => {
     setInputText("");
   };
 
-  const clearInput = (event) => {
-    event.preventDefault();
-    setInputText("");
-  }
+  // handle header visibility
+  $('.todo-input').on('focus', () => {
+    $('.header').addClass('hidden');
+  });
 
 
   return (
     <div>
 
-      <form className="todo-form">
+      <form className="todo-form" onSubmit={addTodoHandler}>
         <input className="todo-input"onChange={inputHandler} value={inputText} type="text" name="insert your todo"></input>
-        <button className="btn-close" onClick={clearInput}><i className="fas fa-times"></i></button>
-        <button className="btn-todo-input"onClick={addTodoHandler} type="submit">add todo</button>
+        <button className="btn-todo-input"type="submit">add todo</button>
       </form>
 
     </div>

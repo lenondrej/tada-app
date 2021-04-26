@@ -16,6 +16,11 @@
   border: #20457C solid 3px;
 }
 
+.todo-input::after {
+  content: 'type your todo here';
+  color: red;
+}
+
 .btn-todo-input {
   flex: 2;
   margin-left: 0.5rem;
